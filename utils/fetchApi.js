@@ -12,6 +12,9 @@ export const fetchApi = async url => {
 
     try {
         const { data } = await axios.get(url, options)
+
+        console.log('data', data)
+
         return data
     } catch (error) {
         console.log('error', error)

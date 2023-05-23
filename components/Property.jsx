@@ -1,15 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Box, Flex, Text, Avatar } from '@chakra-ui/react'
-import { FaBed, FaBath } from 'react-icons/bs'
+import { FaBed, FaBath } from 'react-icons/fa'
 import { GoVerified } from 'react-icons/go'
 import millify from 'millify'
+import { BsGridFill } from 'react-icons/bs'
 
 import defaultImage from "../assets/images/house.jpg"
 
-export default function Property({ property: { coverPhoto, price, rentFrequency, roomss, title, baths, area, agency, isVerified, externalId } }){
+export default function Property({ property: { coverPhoto, price, rentFrequency, rooms, title, baths, area, agency, isVerified, externalID } }){
     return (
-        <Link href={`/property/${externalId}`} passHref>
+        <Link href={`/property/${externalID}`} passHref>
             <Flex
                 flexWrap={"wrap"}
                 w={"420px"}
