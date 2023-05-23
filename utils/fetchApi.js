@@ -11,8 +11,8 @@ const options = {
 export const fetchApi = async url => {
 
     try {
-        const response = await axios.get(url, options)
-        return response
+        const { data } = await axios.get(url, options)
+        return data
     } catch (error) {
         console.log('error', error)
     }
