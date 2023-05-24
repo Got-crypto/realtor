@@ -3,6 +3,8 @@ import { Menu, MenuButton, MenuList, MenuItem, IconButton, Flex, Box, Spacer } f
 import { FcMenu, FcHome, FcAbout } from 'react-icons/fc'
 import { BsSearch } from 'react-icons/bs'
 import { FiKey } from 'react-icons/fi'
+import Realtor from '../assets/images/logo.svg'
+import Image from 'next/image'
 
 export default function Navbar() {
     return (
@@ -13,7 +15,12 @@ export default function Navbar() {
         >
             <Box fontSize={"3xl"} color={"blue.400"} fontWeight={"bold"}>
                 <Link href="/" paddingLeft="2">
-                    Realtor
+                    <Image 
+                        src={Realtor}
+                        height={150}
+                        width={250}
+                        alt='logo'
+                    />
                 </Link>
             </Box>
             <Spacer />
