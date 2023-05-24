@@ -17,9 +17,12 @@ export default function Navbar() {
                 <Link href="/" paddingLeft="2">
                     <Image 
                         src={Realtor}
-                        height={150}
-                        width={250}
+                        height={50}
+                        width={110}
                         alt='logo'
+                        style={{
+                            transform: "translate( 0, 50% )"
+                        }}
                     />
                 </Link>
             </Box>
